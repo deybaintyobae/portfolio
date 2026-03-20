@@ -15,9 +15,35 @@
     />
   </head>
   <body>
+
     <!-- ════════════════════════════════════════
-       COVER PAGE
-  ════════════════════════════════════════ -->
+         LOADING SCREEN
+    ════════════════════════════════════════ -->
+    <div class="loader" id="loader">
+      <div class="loader-bg">
+        <div class="loader-orb l-orb-1"></div>
+        <div class="loader-orb l-orb-2"></div>
+        <div class="loader-lines"></div>
+      </div>
+      <div class="loader-content">
+        <div class="loader-cross">✚</div>
+        <h1 class="loader-title">John Vincent</h1>
+        <p class="loader-sub">Fundamentals of Nursing Portfolio</p>
+        <div class="loader-ecg">
+          <svg viewBox="0 0 300 40" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <polyline class="loader-ecg-line" points="0,20 40,20 55,4 68,36 80,20 130,20 143,7 155,33 167,20 210,20 223,5 235,35 247,20 300,20"/>
+          </svg>
+        </div>
+        <div class="loader-bar-wrap">
+          <div class="loader-bar" id="loaderBar"></div>
+        </div>
+        <p class="loader-pct" id="loaderPct">0%</p>
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════════════
+         COVER PAGE
+    ════════════════════════════════════════ -->
     <section class="page cover-page" id="cover">
       <div class="cover-bg">
         <div class="cover-orb orb-1"></div>
@@ -58,15 +84,8 @@
         </div>
 
         <div class="cover-ecg">
-          <svg
-            viewBox="0 0 500 50"
-            preserveAspectRatio="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <polyline
-              class="ecg-anim"
-              points="0,25 60,25 80,5 95,45 110,25 180,25 200,10 215,40 230,25 300,25 320,8 335,42 350,25 420,25 440,10 455,40 470,25 500,25"
-            />
+          <svg viewBox="0 0 500 50" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <polyline class="ecg-anim" points="0,25 60,25 80,5 95,45 110,25 180,25 200,10 215,40 230,25 300,25 320,8 335,42 350,25 420,25 440,10 455,40 470,25 500,25"/>
           </svg>
         </div>
       </div>
@@ -78,8 +97,8 @@
     </section>
 
     <!-- ════════════════════════════════════════
-       PAGE 1 — ABOUT ME
-  ════════════════════════════════════════ -->
+         PAGE 1 — ABOUT ME
+    ════════════════════════════════════════ -->
     <section class="page about-page" id="about">
       <div class="page-bg about-bg">
         <div class="bg-blob blob-1"></div>
@@ -105,12 +124,8 @@
               />
             </div>
             <div class="about-photo-deco">
-              <span class="deco-pill"
-                ><i class="fas fa-star"></i> 18 years old</span
-              >
-              <span class="deco-pill blue"
-                ><i class="fas fa-birthday-cake"></i> Feb 22, 2007</span
-              >
+              <span class="deco-pill"><i class="fas fa-star"></i> 18 years old</span>
+              <span class="deco-pill blue"><i class="fas fa-birthday-cake"></i> Feb 22, 2007</span>
             </div>
           </div>
 
@@ -118,10 +133,7 @@
             <div class="about-intro">
               <h3 class="about-name">John Vincent <span>B. Maderazo</span></h3>
               <div class="about-tags">
-                <span
-                  ><i class="fas fa-map-marker-alt"></i> University of Perpetual
-                  Help</span
-                >
+                <span><i class="fas fa-map-marker-alt"></i> University of Perpetual Help</span>
                 <span><i class="fas fa-graduation-cap"></i> 1st Year BSN</span>
               </div>
             </div>
@@ -135,9 +147,7 @@
 
             <div class="about-facts">
               <div class="fact-card">
-                <div class="fact-icon">
-                  <i class="fas fa-birthday-cake"></i>
-                </div>
+                <div class="fact-icon"><i class="fas fa-birthday-cake"></i></div>
                 <div>
                   <span class="fact-label">Birthday</span>
                   <span class="fact-val">February 22, 2007</span>
@@ -154,9 +164,7 @@
                 <div class="fact-icon"><i class="fas fa-heart"></i></div>
                 <div>
                   <span class="fact-label">Hobbies</span>
-                  <span class="fact-val"
-                    >Badminton · Anime · Movies · Manga</span
-                  >
+                  <span class="fact-val">Badminton · Anime · Movies · Manga</span>
                 </div>
               </div>
               <div class="fact-card">
@@ -170,9 +178,7 @@
 
             <div class="blue-accent-bar">
               <i class="fas fa-quote-left"></i>
-              <p>
-                "Every great nurse starts somewhere — and this is my beginning."
-              </p>
+              <p>"Every great nurse starts somewhere — and this is my beginning."</p>
             </div>
           </div>
         </div>
@@ -184,8 +190,8 @@
     </section>
 
     <!-- ════════════════════════════════════════
-       PAGE 2 — HOBBIES & PASSION
-  ════════════════════════════════════════ -->
+         PAGE 2 — HOBBIES & PASSION
+    ════════════════════════════════════════ -->
     <section class="page hobbies-page" id="hobbies">
       <div class="page-bg hobbies-bg">
         <div class="bg-blob blob-3"></div>
@@ -202,6 +208,7 @@
         </div>
 
         <div class="hobbies-layout">
+
           <!-- BADMINTON -->
           <div class="hobby-block" data-aos="fade-up">
             <div class="hobby-photo-wrap">
@@ -213,9 +220,7 @@
               <div class="hobby-photo-tag">🏸 Badminton</div>
             </div>
             <div class="hobby-text">
-              <h3 class="hobby-title">
-                <span class="hobby-num">01</span> Badminton
-              </h3>
+              <h3 class="hobby-title"><span class="hobby-num">01</span> Badminton</h3>
               <p>
                 Through playing badminton I learned a lot and made new and loyal
                 friends along the way. The sport taught me discipline, focus,
@@ -245,9 +250,7 @@
               <div class="hobby-photo-tag">👑 Modeling</div>
             </div>
             <div class="hobby-text">
-              <h3 class="hobby-title">
-                <span class="hobby-num">02</span> Modeling &amp; Pageantry
-              </h3>
+              <h3 class="hobby-title"><span class="hobby-num">02</span> Modeling &amp; Pageantry</h3>
               <p>
                 My unexpected passion that led me through hardships and
                 realizations. Modeling and Pageantry is one of my unexpected
@@ -267,17 +270,12 @@
           <div class="interests-row" data-aos="fade-up">
             <h3 class="interests-title">Other Interests</h3>
             <div class="interest-chips">
-              <div class="interest-chip">
-                <span class="chip-icon">🎌</span><span>Anime</span>
-              </div>
-              <div class="interest-chip">
-                <span class="chip-icon">🎬</span><span>Movies</span>
-              </div>
-              <div class="interest-chip">
-                <span class="chip-icon">📖</span><span>Manga</span>
-              </div>
+              <div class="interest-chip"><span class="chip-icon">🎌</span><span>Anime</span></div>
+              <div class="interest-chip"><span class="chip-icon">🎬</span><span>Movies</span></div>
+              <div class="interest-chip"><span class="chip-icon">📖</span><span>Manga</span></div>
             </div>
           </div>
+
         </div>
       </div>
 
@@ -287,8 +285,8 @@
     </section>
 
     <!-- ════════════════════════════════════════
-       PAGE 3 — WHY NURSING?
-  ════════════════════════════════════════ -->
+         PAGE 3 — WHY NURSING?
+    ════════════════════════════════════════ -->
     <section class="page why-page" id="why">
       <div class="page-bg why-bg"></div>
 
@@ -304,12 +302,7 @@
         <div class="why-layout">
           <div class="why-photo-area" data-aos="fade-right">
             <div class="why-photo-frame">
-              <!-- WHY NURSING PHOTO — replace "why-nursing.jpg" with your image filename -->
-              <img
-                class="why-photo-img"
-                src="why-nursing.jpg"
-                alt="Why Nursing"
-              />
+              <img class="why-photo-img" src="src/20250626_164630.jpg" alt="Why Nursing" />
             </div>
             <div class="why-photo-caption">
               <i class="fas fa-heart"></i>
@@ -344,17 +337,14 @@
         </div>
       </div>
 
-      <button
-        class="scroll-next-btn light-btn"
-        onclick="scrollToPage('experience')"
-      >
+      <button class="scroll-next-btn light-btn" onclick="scrollToPage('experience')">
         <span>Next</span><i class="fas fa-chevron-down"></i>
       </button>
     </section>
 
     <!-- ════════════════════════════════════════
-       PAGE 4 — MY EXPERIENCE IN FUNDAMENTALS
-  ════════════════════════════════════════ -->
+         PAGE 4 — MY EXPERIENCE IN FUNDAMENTALS
+    ════════════════════════════════════════ -->
     <section class="page experience-page" id="experience">
       <div class="page-bg exp-bg">
         <div class="bg-blob blob-5"></div>
@@ -374,20 +364,13 @@
         <!-- Main experience block -->
         <div class="exp-main" data-aos="fade-up">
           <div class="exp-main-photo">
-            <!-- EXPERIENCE MAIN PHOTO — replace "experience.jpg" with your image filename -->
-            <img
-              class="exp-photo-img"
-              src="experience.jpg"
-              alt="Fundamentals of Nursing Experience"
-            />
+            <img class="exp-photo-img" src="src/1000026191.jpg" alt="Fundamentals of Nursing Experience" />
             <div class="exp-photo-overlay">
               <span>Fundamentals of Nursing</span>
             </div>
           </div>
           <div class="exp-main-text">
-            <p class="exp-quote">
-              "Learning, growing, and making friends I'll keep forever."
-            </p>
+            <p class="exp-quote">"Learning, growing, and making friends I'll keep forever."</p>
             <p class="exp-body">
               I have learned a lot from my clinical instructors and it was so
               much fun being with them and spending the time with them while
@@ -419,68 +402,69 @@
             <span class="doc-line"></span>
           </h3>
           <div class="doc-grid">
+
+            <!-- DOC CARD 1 — VIDEO -->
             <div class="doc-card" data-aos="fade-up">
-              <!-- DOCUMENTARY PHOTO 1 — replace "doc1.jpg" -->
-              <img class="doc-photo-img" src="doc1.jpg" alt="Documentary 1" />
+              <video
+                class="doc-media"
+                src="src/Messenger_creation_8B57F736-6FAE-43D1-84EB-3C53D9C2000D.mp4"
+                controls
+                muted
+                loop
+              ></video>
               <div class="doc-card-overlay">
                 <p class="doc-caption">Caption here</p>
               </div>
             </div>
 
-            <div class="doc-card" data-aos="fade-up" style="--delay: 0.1s">
-              <!-- DOCUMENTARY PHOTO 2 — replace "doc2.jpg" -->
-              <img class="doc-photo-img" src="doc2.jpg" alt="Documentary 2" />
+            <div class="doc-card" data-aos="fade-up">
+              <video
+                class="doc-media"
+                src="src/1000026188.mp4"
+                controls
+                muted
+                loop
+              ></video>
               <div class="doc-card-overlay">
                 <p class="doc-caption">Caption here</p>
               </div>
             </div>
 
             <div class="doc-card" data-aos="fade-up" style="--delay: 0.2s">
-              <!-- DOCUMENTARY PHOTO 3 — replace "doc3.jpg" -->
-              <img class="doc-photo-img" src="doc3.jpg" alt="Documentary 3" />
+              <img class="doc-media" src="src/Screenshot_20260320_200650_Messenger.jpg" alt="Documentary 3" />
               <div class="doc-card-overlay">
                 <p class="doc-caption">Caption here</p>
               </div>
             </div>
 
             <div class="doc-card" data-aos="fade-up" style="--delay: 0.3s">
-              <!-- DOCUMENTARY PHOTO 4 — replace "doc4.jpg" -->
-              <img class="doc-photo-img" src="doc4.jpg" alt="Documentary 4" />
+              <img class="doc-media" src="src/Screenshot 2026-03-20 at 8.56.47 PM.png" alt="Documentary 4" />
               <div class="doc-card-overlay">
                 <p class="doc-caption">Caption here</p>
               </div>
             </div>
+
           </div>
         </div>
+
       </div>
 
       <!-- Closing banner -->
       <div class="closing-banner" data-aos="fade-up">
         <div class="closing-ecg">
-          <svg
-            viewBox="0 0 500 40"
-            preserveAspectRatio="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <polyline
-              class="ecg-close"
-              points="0,20 60,20 75,3 90,37 105,20 180,20 195,5 210,35 225,20 300,20 315,4 330,36 345,20 420,20 435,6 450,34 465,20 500,20"
-            />
+          <svg viewBox="0 0 500 40" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <polyline class="ecg-close" points="0,20 60,20 75,3 90,37 105,20 180,20 195,5 210,35 225,20 300,20 315,4 330,36 345,20 420,20 435,6 450,34 465,20 500,20"/>
           </svg>
         </div>
         <p class="closing-text">Thank you for viewing my portfolio</p>
-        <p class="closing-name">
-          John Vincent B. Maderazo · 1st Year BSN · University of Perpetual Help
-        </p>
+        <p class="closing-name">John Vincent B. Maderazo · 1st Year BSN · University of Perpetual Help</p>
         <p class="closing-subject">Fundamentals of Nursing (RLE)</p>
       </div>
     </section>
 
     <!-- Lightbox -->
     <div class="lightbox" id="lightbox">
-      <button class="lb-close" id="lbClose">
-        <i class="fas fa-times"></i>
-      </button>
+      <button class="lb-close" id="lbClose"><i class="fas fa-times"></i></button>
       <img id="lbImg" src="" alt="" />
     </div>
 
