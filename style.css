@@ -333,6 +333,76 @@ img  { display: block; max-width: 100%; }
 .doc-card:hover .doc-card-overlay { opacity: 1; }
 .doc-caption { color: white; font-size: .78rem; line-height: 1.4; }
 
+/* ══════════════════════════════════════
+   PAGE 4 — EXPERIENCE REFLECTION
+══════════════════════════════════════ */
+.reflection-page { background: var(--cream); }
+.blob-r1 { width: 460px; height: 460px; background: radial-gradient(circle, #dbeafe, transparent); top: -80px; left: -80px; }
+.blob-r2 { width: 300px; height: 300px; background: radial-gradient(circle, #fef3c7, transparent); bottom: 0; right: -40px; }
+
+.reflection-layout { display: grid; grid-template-columns: 64px 1fr; gap: 40px; align-items: start; }
+
+.reflection-icon-col { display: flex; flex-direction: column; align-items: center; padding-top: 6px; }
+.refl-icon-wrap { width: 48px; height: 48px; border-radius: 50%; background: var(--blue); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 16px rgba(37,99,235,.3); flex-shrink: 0; }
+.refl-icon-wrap.small { width: 38px; height: 38px; background: var(--navy-lt); box-shadow: none; }
+.refl-icon { color: white; font-size: 1.1rem; }
+.refl-icon-wrap.small .refl-icon { font-size: .9rem; }
+.refl-line { width: 2px; height: 40px; background: linear-gradient(to bottom, var(--blue), var(--border)); flex-shrink: 0; }
+
+.reflection-body { display: flex; flex-direction: column; gap: 28px; }
+.refl-block { background: white; border-radius: var(--radius); padding: 24px 28px; border: 1px solid var(--border); box-shadow: var(--shadow-sm); transition: transform var(--transition), box-shadow var(--transition); }
+.refl-block:hover { transform: translateX(6px); box-shadow: var(--shadow-md); }
+.refl-subtitle { font-family: var(--font-head); font-size: 1.1rem; color: var(--navy); font-weight: 700; margin-bottom: 10px; }
+.refl-text { font-size: .97rem; line-height: 1.85; color: var(--text); }
+
+.refl-quote-card { background: linear-gradient(135deg, var(--navy), var(--navy-lt)); border-radius: var(--radius); padding: 24px 28px; display: flex; gap: 14px; align-items: flex-start; }
+.refl-quote-card i { color: var(--gold); font-size: 1.5rem; flex-shrink: 0; margin-top: 2px; }
+.refl-quote-card p { font-family: var(--font-script); font-size: 1.25rem; color: rgba(255,255,255,.9); line-height: 1.5; }
+
+/* ══════════════════════════════════════
+   PAGE 5 — CHALLENGES & HARDSHIPS
+══════════════════════════════════════ */
+.challenges-page { background: var(--navy); }
+.challenges-bg { background: var(--navy); }
+.challenges-bg::before { content: ''; position: absolute; inset: 0; background: linear-gradient(145deg, #0d1b2a 0%, #1a2f50 55%, #0d1b2a 100%); }
+.challenges-bg::after  { content: ''; position: absolute; inset: 0; background-image: radial-gradient(rgba(255,255,255,.025) 1px, transparent 1px); background-size: 40px 40px; }
+
+.challenges-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+
+.challenge-cards-col { display: flex; flex-direction: column; gap: 20px; }
+.challenge-card {
+  background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.1);
+  border-radius: var(--radius); padding: 22px 24px;
+  display: flex; gap: 18px; align-items: flex-start;
+  transition: transform var(--transition), background var(--transition);
+  animation-delay: var(--delay, 0s);
+}
+.challenge-card:hover { transform: translateX(6px); background: rgba(255,255,255,.1); }
+.challenge-card.hardest { border-color: rgba(239,68,68,.35); background: rgba(239,68,68,.08); }
+.challenge-card.hardest:hover { background: rgba(239,68,68,.14); }
+.challenge-icon { width: 44px; height: 44px; border-radius: 12px; background: rgba(37,99,235,.25); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.challenge-card.hardest .challenge-icon { background: rgba(239,68,68,.25); }
+.challenge-icon i { color: var(--blue-lt); font-size: 1.1rem; }
+.challenge-card.hardest .challenge-icon i { color: #fca5a5; }
+.challenge-body h4 { font-size: 1rem; font-weight: 700; color: white; margin-bottom: 7px; }
+.challenge-body p  { font-size: .88rem; line-height: 1.75; color: rgba(255,255,255,.65); }
+
+.challenges-right { display: flex; flex-direction: column; gap: 24px; }
+
+.overcome-block { background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.1); border-radius: var(--radius); padding: 28px; }
+.overcome-header { display: flex; align-items: center; gap: 12px; margin-bottom: 18px; }
+.overcome-header i { color: var(--gold); font-size: 1.4rem; }
+.overcome-header h3 { font-family: var(--font-head); font-size: 1.3rem; color: white; font-weight: 700; }
+.overcome-text { font-size: .95rem; line-height: 1.85; color: rgba(255,255,255,.75); margin-bottom: 14px; }
+.overcome-divider { height: 1px; background: rgba(255,255,255,.1); margin: 16px 0; }
+
+.gratitude-card { background: linear-gradient(135deg, rgba(245,158,11,.15), rgba(245,158,11,.05)); border: 1px solid rgba(245,158,11,.3); border-radius: var(--radius); padding: 24px; }
+.gratitude-top { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
+.gratitude-top i { color: var(--gold); font-size: 1.3rem; }
+.gratitude-top h4 { font-family: var(--font-head); font-size: 1.1rem; color: var(--gold-lt); font-weight: 700; }
+.gratitude-card p { font-size: .9rem; line-height: 1.8; color: rgba(255,255,255,.7); }
+.gratitude-card strong { color: var(--gold-lt); }
+
 /* ── CLOSING BANNER ── */
 .closing-banner { background: var(--navy); padding: 60px 40px 48px; text-align: center; position: relative; overflow: hidden; }
 .closing-banner::before { content: ''; position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,.02) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.02) 1px, transparent 1px); background-size: 50px 50px; }
@@ -349,6 +419,68 @@ img  { display: block; max-width: 100%; }
 .lb-close { position: absolute; top: 20px; right: 20px; background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.2); color: white; width: 44px; height: 44px; border-radius: 50%; font-size: 1.2rem; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background var(--transition); }
 .lb-close:hover { background: #ef4444; }
 
+/* ── CUSTOM CURSOR ── */
+body { cursor: none; }
+.custom-cursor {
+  position: fixed; top: 0; left: 0; z-index: 999999;
+  width: 36px; height: 36px; border-radius: 50%;
+  border: 2px solid var(--gold);
+  pointer-events: none; transform: translate(-50%, -50%);
+  transition: transform 0.15s ease, width 0.25s ease, height 0.25s ease,
+              border-color 0.25s ease, background 0.25s ease;
+  mix-blend-mode: difference;
+}
+.custom-cursor-dot {
+  position: fixed; top: 0; left: 0; z-index: 999999;
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--gold); pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.05s ease;
+}
+.cursor-hover .custom-cursor {
+  width: 56px; height: 56px;
+  background: rgba(245,158,11,.12);
+  border-color: var(--blue-lt);
+}
+.cursor-click .custom-cursor {
+  width: 24px; height: 24px;
+  background: rgba(245,158,11,.3);
+}
+
+/* ── EXPERIENCE PHOTO ROW (reflection page) ── */
+.refl-photos {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 16px; margin-top: 40px;
+}
+.refl-photo-card {
+  border-radius: var(--radius); overflow: hidden;
+  box-shadow: var(--shadow-md);
+  aspect-ratio: 4/3;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.refl-photo-card:hover { transform: translateY(-6px) scale(1.02); box-shadow: var(--shadow-lg); }
+.refl-photo-img {
+  width: 100%; height: 100%; object-fit: cover;
+  display: block; cursor: pointer;
+  transition: transform var(--transition);
+}
+.refl-photo-img:hover { transform: scale(1.04); }
+
+/* ── CHALLENGE PHOTO (challenges page) ── */
+.challenge-photo-wrap {
+  grid-column: 1 / -1;
+  max-width: 520px; width: 100%;
+  margin: 32px auto 0;
+  border-radius: var(--radius); overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0,0,0,.4);
+  transition: transform var(--transition);
+}
+.challenge-photo-wrap:hover { transform: translateY(-4px); }
+.challenge-photo-img {
+  width: 100%; aspect-ratio: 4/3; object-fit: cover;
+  display: block; cursor: pointer;
+}
+
 /* ── AOS ── */
 [data-aos] { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; transition-delay: var(--delay, 0s); }
 [data-aos="fade-right"] { transform: translateX(-32px); }
@@ -362,7 +494,10 @@ img  { display: block; max-width: 100%; }
 
 /* ── RESPONSIVE ── */
 @media (max-width: 1024px) {
-  .about-layout { grid-template-columns: 1fr; }
+  .challenges-layout { grid-template-columns: 1fr; }
+  .reflection-layout { grid-template-columns: 1fr; }
+  .reflection-icon-col { display: none; }
+  .refl-photos { grid-template-columns: 1fr 1fr; }
   .hobby-block, .hobby-block.reverse { grid-template-columns: 1fr; }
   .hobby-block.reverse .hobby-photo-wrap { grid-column: 1; grid-row: auto; }
   .hobby-block.reverse .hobby-text       { grid-column: 1; grid-row: auto; }

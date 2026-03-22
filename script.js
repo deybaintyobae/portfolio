@@ -32,6 +32,25 @@
   }, INTERVAL);
 })();
 
+// ── CUSTOM CURSOR ────────────────────────────────────────
+const cursorRing = document.getElementById('customCursor');
+const cursorDot  = document.getElementById('customCursorDot');
+
+document.addEventListener('mousemove', e => {
+  cursorRing.style.left = e.clientX + 'px';
+  cursorRing.style.top  = e.clientY + 'px';
+  cursorDot.style.left  = e.clientX + 'px';
+  cursorDot.style.top   = e.clientY + 'px';
+});
+
+document.querySelectorAll('a, button, img, video, [contenteditable], .interest-chip, .fact-card, .challenge-card, .hobby-card').forEach(el => {
+  el.addEventListener('mouseenter', () => document.body.classList.add('cursor-hover'));
+  el.addEventListener('mouseleave', () => document.body.classList.remove('cursor-hover'));
+});
+
+document.addEventListener('mousedown', () => document.body.classList.add('cursor-click'));
+document.addEventListener('mouseup',   () => document.body.classList.remove('cursor-click'));
+
 // ── AOS (Animate on Scroll) ──────────────────────────────
 const aosObserver = new IntersectionObserver(entries => {
   entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in-view'); });
@@ -52,7 +71,7 @@ const lbClose  = document.getElementById('lbClose');
 
 // Make all portfolio images open in lightbox on click
 document.querySelectorAll(
-  '.about-photo-img, .hobby-photo-img, .why-photo-img, .exp-photo-img, .doc-photo-img, .cover-photo-preview'
+  '.about-photo-img, .hobby-photo-img, .why-photo-img, .exp-photo-img, .doc-photo-img, .cover-photo-preview, .refl-photo-img, .challenge-photo-img'
 ).forEach(img => {
   img.style.cursor = 'pointer';
   img.addEventListener('click', () => openLightbox(img.src));
