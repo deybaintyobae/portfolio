@@ -1691,6 +1691,11 @@ body {
   gap: 16px;
   margin-top: 40px;
 }
+
+/* ── QUIZ GALLERY (challenges page) ── */
+.challenges-page .refl-photos {
+  grid-template-columns: repeat(4, 1fr);
+}
 .refl-photo-card {
   border-radius: var(--radius);
   overflow: hidden;
@@ -1794,7 +1799,8 @@ body {
   .reflection-icon-col {
     display: none;
   }
-  .refl-photos {
+  .refl-photos,
+  .challenges-page .refl-photos {
     grid-template-columns: 1fr 1fr;
   }
   .hobby-block,
